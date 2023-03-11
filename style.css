@@ -135,14 +135,14 @@ a {
 
 .content {
     padding-top: 65px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
+
 
 .content-offer-list {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1140px;
 }
 
 
@@ -175,7 +175,6 @@ a {
 }
 
 .content-offer-item:last-child {
-    min-width: 100%;
     margin: 0;
     background-image: url(img/content-accesories.png);
 }
@@ -457,7 +456,8 @@ a {
     }
 
     .content {
-        padding-top: 65px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .content-offer-list {
