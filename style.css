@@ -246,7 +246,7 @@ a {
 }
 
 .products-item {
-    width: 360px;
+    max-width: 360px;
     background: #F8F8F8;
     display: block;
     position: relative;
@@ -305,16 +305,21 @@ a {
     display: block;
     margin: 0 auto;
     box-sizing: border-box;
+    width: 100%;
+    height: auto;
 }
 
 .blok-2 {
     background: #F7E4E2;
     max-height: 420px;
-    padding: 9px 110px 11px 108px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    width: 100%;
+    height: auto;
 }
 
 .products-item-txt-wrp {
-    padding: 25px 18px 20px 18px;
+    padding: 25px 28px 20px 16px;
     box-sizing: border-box;
     text-align: left;
 }
@@ -323,6 +328,7 @@ a {
     display: block;
     margin: 0 0 12px 0;
     text-transform: uppercase;
+    font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
@@ -446,7 +452,6 @@ a {
     }
 
     .section-subtitle-h2 {
-        font-weight: 700;
         font-size: 24px;
         line-height: 29px;
     }
@@ -460,7 +465,11 @@ a {
     }
 
     .content-offer-item {
-        min-height: 168px;
+        min-height: 167px;
+    }
+
+    .big {
+        min-height: 116px;
     }
 
     .content-subject {
@@ -474,5 +483,73 @@ a {
 
     .content-product-button {
         margin: 32px auto 71px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-left-menu {
+        margin-left: 16px;
+    }
+
+    .header-right-menu {
+        margin-right: 16px;
+    }
+
+    .header-img-4 {
+        display: none;
+    }
+
+    .header-img-5 {
+        display: none;
+    }
+
+    .section-img {
+        display: none;
+    }
+
+    .section-title-h2 {
+        font-size: 38px;
+        line-height: 46px;
+        min-width: 236px;
+    }
+
+    .section-subtitle-h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .content {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .content-offer-list {
+        gap: 32px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .content-offer-item {
+        min-height: 247px;
+        max-width: 343px;
+    }
+
+    .big {
+        min-height: 111px;
+    }
+
+    .content-subject {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .products-list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: auto;
+    }
+
+    .content-product-button {
+        margin: 41px auto 85px auto;
     }
 }
