@@ -53,6 +53,10 @@ a {
     gap: 33px;
 }
 
+.header-dropdown {
+    position: relative;
+}
+
 .header-img-1 {
     background-image: url(img/header-img-1.svg);
     width: 44px;
@@ -65,10 +69,70 @@ a {
     height: 26.79px;
 }
 
-.header-img-3 {
-    background-image: url(img/header-img-3.svg);
+.header-dropdown {
     width: 32px;
     height: 23px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 232px;
+    height: 634px;
+    background: #FFFFFF;
+    left: 100%;
+    /* Всплывающее меню должно находиться под иконкой наведения, но сделала отступы по макету */
+    margin-left: 135px;
+    margin-top: 24px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.header-dropdown:hover .dropdown {
+    display: block;
+}
+
+.dropdown-item-all {
+    margin: 32px 144px 24px 33px;
+}
+
+.dropdown-item-menu {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+}
+
+.dropdown-item-chapter {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-left: 32px;
+}
+
+.dropdown-chapter {
+    margin-bottom: 12px;
+}
+
+.dropdown-item-subsection {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-left: 54px;
+}
+
+.dropdown-subsection {
+    margin-bottom: 11px;
+}
+
+.dropdown-item {
+    margin-bottom: 20px;
 }
 
 .header-img-4 {
@@ -410,6 +474,10 @@ a {
     margin: 48px auto 60px auto;
 }
 
+.content-product-button:hover {
+    background: #F16D7F;
+}
+
 .content-product-btn {
     font-style: normal;
     font-weight: 400;
@@ -423,6 +491,279 @@ a {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+
+.content-product-btn:hover {
+    color: #FFFFFF;
+}
+
+.footer-menu {
+    width: 100%;
+    min-height: 341px;
+    background: #222224;
+}
+
+.footer-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+.footer-menu-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footer-menu-item-1 {
+    width: 45px;
+    height: 32px;
+    background-image: url(img/footer-menu-item-1.svg);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.footer-menu-item-2 {
+    background-image: url(img/footer-menu-item-2.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.footer-menu-item-3 {
+    background-image: url(img/footer-menu-item-3.svg);
+    width: 47px;
+    height: 35px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.footer-menu-item-h-1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+    margin-top: 28px;
+}
+
+.footer-menu-item-h-2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.footer-menu-item-h-3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+    margin-top: 25px;
+}
+
+.footer-menu-item-p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    max-width: 360px;
+    min-height: 34px;
+}
+
+.footer-page {
+    min-height: 448px;
+    background-image: linear-gradient(rgba(244, 244, 244, .7), rgba(244, 244, 244, .7)), url(img/footer-page-fon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 97px;
+}
+
+.footer-page-list {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.footer-page-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 359px;
+    height: 225px;
+}
+
+.footer-page-left-photo {
+    background-image: url(img/footer-page-photo.png);
+    width: 96px;
+    height: 96px;
+    display: block;
+}
+
+.footer-page-left-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.footer-page-right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 356px;
+    height: 142px;
+}
+
+.footer-page-right-h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+
+.footer-page-right-h4 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #000000;
+    max-width: 557px;
+}
+
+.footer-page-right-email {
+    max-width: 356px;
+    height: 49px;
+    margin-top: 32px;
+    text-align: center;
+    background: #E1E1E1;
+    border-radius: 20px;
+
+}
+
+.email {
+    border: none;
+    margin-right: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    float: left;
+    max-width: 170px;
+    height: 36px;
+    background: #E1E1E1;
+    /* border-radius: 20px 0 0 20px; */
+    margin: 7px auto 7px 22px;
+    transition: background-color 50000s, color 50000s, filter 50000s;
+    outline: none;
+}
+
+
+.sbtn {
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    float: right;
+    width: 100px;
+    height: 100%;
+    background: #E05C6E;
+    border-radius: 0 20px 20px 0;
+}
+
+.footer-container {
+    background: #222224;
+    min-height: 79px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-align: center;
+    padding-left: 235px;
+    padding-right: 230px;
+}
+
+.footer-container-brand {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer-container-network-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 7px;
+}
+
+.footer-container-network-item {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+}
+
+.footer-container-network-item:hover {
+    background: #F16D7F;
+}
+
+.network-1 {
+    background-image: url(img/footer-container-network-1.svg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 15px;
+    margin: 8px 12px;
+}
+
+.network-2 {
+    background-image: url(img/footer-container-network-2.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin: 9px 8px;
+}
+
+.network-3 {
+    background-image: url(img/footer-container-network-3.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 15px;
+    margin: 8px 9px;
+}
+
+.network-4 {
+    background-image: url(img/footer-container-network-4.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 13px;
+    margin: 9px 8px;
+}
+
 
 @media (max-width: 1024px) {
     .header {
@@ -483,6 +824,26 @@ a {
 
     .content-product-button {
         margin: 32px auto 71px auto;
+    }
+
+    .footer-menu-list {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .footer-page-list {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .footer-page-right-email {
+        margin-top: 27px;
+        margin-bottom: 140px;
+    }
+
+    .footer-container {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -551,5 +912,37 @@ a {
 
     .content-product-button {
         margin: 41px auto 85px auto;
+    }
+
+    .footer-page-left-p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footer-page-right-h3 {
+        line-height: 37px;
+    }
+
+    .footer-page-right-h4 {
+        min-width: 271px;
+    }
+
+    .footer-page-right-email {
+        margin-top: 22px;
+        margin-bottom: 110px;
+        max-width: 341px;
+        height: 47px;
+    }
+
+    .sbtn {
+        max-width: 28%;
+    }
+
+    .footer-container {
+        flex-direction: column-reverse;
+        gap: 40;
+        justify-content: space-between;
+        padding-top: 43px;
+        padding-bottom: 9px;
     }
 }
