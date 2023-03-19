@@ -449,7 +449,7 @@ a {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19, 2px;
+    line-height: 19px;
     text-align: center;
     word-break: break-all;
 }
@@ -940,9 +940,14 @@ a {
 
     .footer-container {
         flex-direction: column-reverse;
-        gap: 40;
+        gap: 40px;
         justify-content: space-between;
         padding-top: 43px;
         padding-bottom: 9px;
     }
+
+    .dropdown {
+        margin-left: -150px;
+    }
+
 }
